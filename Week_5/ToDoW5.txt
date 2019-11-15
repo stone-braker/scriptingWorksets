@@ -1,0 +1,18 @@
+it is: Monday night. approx midnight.
+just finished: ass. 4 python prog
+NEXT DUE: Linux lab 4 on Friday at midnight
+and then, webDesign project on Monday next week before class I think. anyway, do it now.
+and then, ass. 5 in python prog next tuesday
+and then, midterm in Linux next week online
+and then, midterm in webDesign next week online as well
+and maybe a quiz in Scripting/python
+
+
+Ass5
+create getFreshPuzzle() function
+you can use global, but there are different ways to include blank puzzle 
+
+
+chr(random.randrange(97, 97 + 26))
+above is a great way to generate random lowercase characters of alphabet
+

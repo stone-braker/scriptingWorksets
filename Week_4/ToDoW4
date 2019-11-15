@@ -1,0 +1,71 @@
+Monday Oct21
+1) SC week 4 assignment
+2) Read all Linux and take notes(exam next week)
+3) Read all HTML5 and take notes(exam next week)
+4) Do chapter 4 p 138-140 Pacific Trails Resort web page
+5) Linux Lab 4 due Friday @ midnight
+6) SC assignment 5
+
+
+Assignment #4
+
+List of required functions:
+
+1) getInput(prompt)
+2) charToInt(digit)
+3) doubledDigitValue(number)
+4) sumOfDigits(cardNumber)
+5) isValid(cardNumber)
+6) getCardType(cardNumber)
+
+Strategy:
+You can and should build functions one by one
+and test them in main. For example, to test getInput()
+you might write in your main function:
+   card = getInput("Enter card number:"):
+   print(card) //should be whatever you enter
+
+Once you are sure that function is working correctly,
+you can delete (or comment out) those tests and start working
+on the next function – testing it as you go. Once they are all written,
+you can write the "real" main function…
+it should only take a few lines of code to express.
+
+Here is a diagram of how the functions should
+relate to each other. It shows that main should
+at some point call isValid and give it a string
+like "43214368". isValid will do some work with
+that string and eventually return true or false.
+As part of doing its work, isValid should call
+sumOfDigits and pass it the string representing
+the card number. sumOfDigits will return an int
+like 45 based on doing the Luhn algorithm.
+sumOfDigits will in turn need to call carToInt
+to convert '8' to the int 8 and doubleDigitValue
+to take in 6 and return 3 since double of 6 is 12
+but the sum of the digits is 3.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I'm looking between things. Between the states of seeing. Between all the ways we can perceive a moment,
+from all the perspectives, in between there - there's magic and infinity in there. 

@@ -1,0 +1,15 @@
+Notes from:
+https://www.mathsisfun.com/data/standard-deviation-formulas.html
+
+Standard Deviation is a measure of how spread-out a group of numbers is.
+It is signified by the greek letter sigma. \u03C3 in a string in python.
+the Standard Deviation is defined as the square root of the variance. 
+The Variance is: the avearage of the squared differnces from the mean.
+
+To calculate Variance:
+    -Work out the mean of the list of scores. (simple average of the #'s)
+    -Then for each number, subtract the mean and square the result. (squared difference)
+    -Then work out the average of those squared differences.
+    -Then the standard deviation is the square root of the variance! easy.
+    
+ 

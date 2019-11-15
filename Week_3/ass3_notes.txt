@@ -1,0 +1,47 @@
+Write a program that will take
+in the balance on a card, the amount someone
+will pay each month assume constant payments),
+and the APR on their card
+(entered as a percent like: 19.9) - all three
+values are possibly decimals.
+It should print to a month by month summary
+of their payoff schedule like this:
+
+Enter balance: 1000                    
+Enter payment: 150    
+Enter APR: 19.9
+   
+Do not worry if columns do not line up perfectly,
+but there should be a reasonable attempt to provide
+some amount of formatting.
+ 
+Month          Int.         Pay               Balance
+0                                           1000.00
+1             16.58        150.00            866.58 
+2             14.37        150.00            730.95 
+3             12.12        150.00            593.08 
+4              9.84        150.00            452.91 
+5              7.51        150.00            310.42 
+6              5.15        150.00            165.57 
+7              2.75        150.00             18.32 
+8              0.30         18.62              0.00
+
+
+  
+Assume that interest is calculated and added
+to the previous month's balance before the
+monthly payment is applied. Your output should
+show enough lines to completely pay off the balance.
+The balance should not go past 0. 
+
+Hints:
+Build your way to the final solution -
+don't even worry about using APR/interest at first.
+Monthly interest rate should be calculated as APR / 12.
+Print out tab characters: '\t' to jump to the next column.
+Don't worry if things do not line up perfectly.
+(A large number will not fit in one tab worth of space).
+You need to format the money to print to two decimals.
+If you are not familiar with formatting output
+then one method is to use this {:.2f} or you can look up other methods.
+ 
