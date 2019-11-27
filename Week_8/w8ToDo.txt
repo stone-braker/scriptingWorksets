@@ -1,0 +1,106 @@
+first and foremost,
+
+Winter 2020 Class Registration List:
+
+1) CIS 125E Excel-Workbooks; Mandy Reininger; MW, 1030-1220; 
+
+2) CIS 278 Data Communications; Mandy Reininger; Online
+
+3) CIS 140B Computer Operating System; Don Kraus; Online
+
+4) CIS 284 Ethical Hacking; Don Kraus; Online
+    # not sure if this'll be worth it
+    # probably Operating Systems is better
+    
+
+Week Seven:
+Thursday, Nov 7, 2019:
+
+Linux:
+    Lab Five Due Friday, Nov 8 by 11:59 pm
+        2 ppts
+        read: advanced bash ch 7 ch 11 and ch 24
+    
+
+WebDesign:
+    Ch 6 Pacific Trails Resort changes
+        -email Tyler and BJ GET IMAGES AND FILES!!!
+
+Scripting:
+    Assignment Seven Due by Tuesday.
+        -must read ch. 10, 11, & 12 to do Repl.it assignment.
+
+
+Week Eight:
+Friday Nov 15, 2019:
+
+Linux:
+    just finished Lab six. Lab seven Due next Friday Nov 22
+
+WebDesign:
+    do ch 7 and ch 8 by mon week 10
+    probably a quiz or something next week
+
+Pathways:
+    do assignment 4 by mon Nov 18
+
+Scripting:
+    do quiz 3 (chs 10 & 11) by Mon Nov 18
+    do assignment 7 by Tue Nov 19
+
+Week 8 Class notes:
+
+
+if user enters in [1, 1] come into grid, look at [1, 1] if ampersand,
+need to do recursive getAmper(): function four times to check all surrounding spaces.
+for spaces on edges, notes already taken.
+
+
+for direction in (list of directional equivalents)
+
+build grid in memory, take copy of it,and then for space in surroundingSpaces
+if ampersand change to '-' after copying to counter.
+goes through and clears spaces and avoids backtrack.
+once you get to spot where everything around is a '-', you're done, return counter for ampersands.
+
+
+When Calculating WrapAround:
+
+if n-1 = -1: then n equals 9
+if n+1 = 10: then n equals 0
+
+How to Calculate Number of Spaces With More Than One Surrounding Ampersand:
+
+no idea.
+
+
+
+
+look at in-depth memory functionality of Python as per Hiatt
+
+Recursive Function Call:
+
+when these spiders go out top right bottom left, they don't keep counting themselves, change each '@' to '-'
+
+
+def isAmper(input):
+    if input == '@':
+        count = 1
+    if input == '-':
+        count = 0
+    return count
+
+def recursiveCheck(x, y):
+    if symbol at postition [x,y] == '-'
+        return 0
+    blank = isAmper(position[x, y])
+    if blank == 1:
+        return 1
+        blank == '-'
+
+    else:
+        above = isAmper(position[x-1, y])
+        below = isAmper(position[x+1, y])
+        left = isAmper(position[x, y-1])
+        right = isAmper(position[x, y+1])
+        return above + below, left, right
